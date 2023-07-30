@@ -73,16 +73,4 @@ router.route("/get/:id").get(async (req, res) => {
     }
 });
 
-router.route("/count").get(async (req, res) => {
-    try {
-        const count = await Student.countDocuments();
-        res.status(200).send({status: "Successfully Counted", count: count});
-    } catch (err) {
-        console.log(err.message);
-        res.status(500).send({status: "Error with Counting Data", error: err.message});
-    }
-});
-
-
-
 module.exports = router;

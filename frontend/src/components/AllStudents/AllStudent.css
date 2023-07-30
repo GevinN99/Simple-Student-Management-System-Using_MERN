@@ -1,0 +1,40 @@
+.all-students-container {
+    margin-top: 5%;
+    margin-inside: 10%;
+    border-radius: 60px; /* Add border-radius property to create rounded corners */
+    box-shadow: #cecece 5px 5px 20px;
+    color: #cd0d6a;
+}
+
+.all-students-container:hover {
+    box-shadow: 0 0 20px #e6a1db;
+}
+
+.all-students {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table {
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+}
+
+.table th,
+.table td {
+    background-color: transparent;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.last-row th,
+.last-row td {
+    border-bottom: none;
+}
+
+.btn{
+    border-radius: 30px;
+
+    border: none;
+    transition: 0.3s;
+}

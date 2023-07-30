@@ -1,0 +1,72 @@
+.btn {
+    background-color: #0f0505;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #D90EAC;
+    color: white;
+    transition-delay: 0.2s;
+}
+
+.btn:active:focus {
+    background-color: #D90EAC;
+    color: white;
+}
+
+.form-control:hover {
+    border: 2px solid #e794da;
+}
+
+.form-control:focus {
+    border: 2px solid #e794da;
+    outline: none;
+    box-shadow: 0 0 10px #e6a1db;
+}
+
+.form-container {
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-inside: 10%;
+    box-shadow: #cecece 5px 5px 20px;
+}
+
+.form-container:hover {
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-inside: 5%;
+    box-shadow: #e6a1db 5px 5px 20px;
+}
+
+.form-label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0f0505 !important;
+}
+
+/* Remove shadow and rounded border from radio buttons */
+.form-check-input {
+    border: 1px solid #dee2e6;
+    box-shadow: none;
+}
+
+.form-check-input:checked[type="radio"] {
+    border-color: #f468d6;
+    background-color: #f42fce;
+}
+
+.form-check-input:checked[type="radio"]:hover {
+    background-color: #f42fce;
+    border-color: #f468d6;
+}

@@ -1,0 +1,47 @@
+/* NavBar.css */
+.navbar {
+    background-color: #0f0505 !important;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.nav-text {
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-home {
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-home:hover {
+    color: #D90EAC;
+    transition-delay: 0.2s;
+}
+
+.nav-home:active:focus{
+    color: #cd0d6a;
+}
+
+.navbar-nav .nav-link .nav-text:hover {
+    color: #D90EAC;
+    transition-delay: 0.2s;
+
+}
+
+.nav-home:active:focus{
+    color: #cd0d6a;
+}
