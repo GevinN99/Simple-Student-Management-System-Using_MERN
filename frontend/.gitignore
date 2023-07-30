@@ -1,0 +1,43 @@
+# Dependency directories
+node_modules/
+
+# Build files
+build/
+dist/
+*.log
+*.gz
+
+# Environment variables
+.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Cache and temporary files
+.cache/
+.tmp/
+.temp/
+.temp_files/
+temp/
+.lock/
+.yarn/
+pnpm-lock.yaml
+yarn.lock
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# macOS related files
+.DS_Store
+
+# npm cache files
+.npm
+
+# Miscellaneous
+*.pem
+*.log
