@@ -4,6 +4,14 @@
     padding: 10px;
 }
 
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
 .navbar-brand {
     color: #ffffff;
     font-size: 24px;

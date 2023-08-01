@@ -3,12 +3,16 @@ const Student = require("../models/Student");
 
 router.route("/add").post(async (req, res) => {
     try {
-        const { name, age, gender } = req.body;
+        const { firstName, lastName, regNumber, age, gender, address, contactNumber } = req.body;
 
         const newStudent = new Student({
-            name,
+            firstName,
+            lastName,
+            regNumber: Number(regNumber),
             age: Number(age),
-            gender
+            gender,
+            address,
+            contactNumber: Number(contactNumber)
         });
 
         await newStudent.save();
@@ -32,12 +36,16 @@ router.route("/").get(async (req, res) => {
 router.route("/update/:id").put(async (req, res) => {
     try {
         let userId = req.params.id;
-        const {name, age, gender} = req.body;
+        const { firstName, lastName, regNumber, age, gender, address, contactNumber } = req.body;
 
         const updateStudent = {
-            name,
-            age,
-            gender
+            firstName,
+            lastName,
+            regNumber: Number(regNumber),
+            age: Number(age),
+            gender,
+            address,
+            contactNumber: Number(contactNumber)
         };
 
         const update = await Student.findByIdAndUpdate(userId, updateStudent);
@@ -65,11 +73,10 @@ router.route("/get/:id").get(async (req, res) => {
     try {
         let userId = req.params.id;
         const user = await Student.findById(userId);
-
-        res.status(200).send({status: "User Fetched", user: user});
+        res.status(200).send({ status: "User Fetched", user: user });
     } catch (err) {
         console.log(err.message);
-        res.status(500).send({status: "Error with Fetching data", error: err.message});
+        res.status(500).send({ status: "Error with Fetching data", error: err.message });
     }
 });
 
@@ -82,7 +89,6 @@ router.route("/count").get(async (req, res) => {
         res.status(500).send({status: "Error with Counting Data", error: err.message});
     }
 });
-
 
 
 module.exports = router;

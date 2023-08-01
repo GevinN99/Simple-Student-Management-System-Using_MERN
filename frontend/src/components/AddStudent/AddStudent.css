@@ -26,24 +26,29 @@
 }
 
 .form-control:focus {
-    border: 2px solid #e794da;
-    outline: none;
-    box-shadow: 0 0 10px #e6a1db;
+    box-shadow: #e6a1db 5px 5px 20px;
+    border: white;
+}
+
+.form-container-heading {
+    color: #cd0d6a;
+    text-align: center;
 }
 
 .form-container {
     border: none;
     border-radius: 30px;
-    padding: 20px;
+    padding: 5%;
     margin-top: 5%;
     margin-inside: 10%;
     box-shadow: #cecece 5px 5px 20px;
+    margin-bottom: 50px;
 }
 
 .form-container:hover {
     border: none;
     border-radius: 30px;
-    padding: 20px;
+    padding: 5%;
     margin-top: 5%;
     margin-inside: 5%;
     box-shadow: #e6a1db 5px 5px 20px;
@@ -70,3 +75,14 @@
     background-color: #f42fce;
     border-color: #f468d6;
 }
+
+.form-select:hover {
+    box-shadow: #e6a1db 5px 5px 20px;
+    border: white;
+}
+
+.form-select:active:focus {
+    box-shadow: #e6a1db 5px 5px 20px;
+    border: white;
+}
+

@@ -1,9 +1,12 @@
+/* Common styles for all screen sizes */
 .all-students-container {
-    margin-top: 5%;
+    margin: 20px;
     margin-inside: 10%;
     border-radius: 60px; /* Add border-radius property to create rounded corners */
     box-shadow: #cecece 5px 5px 20px;
     color: #cd0d6a;
+    padding: 3%;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
 }
 
 .all-students-container:hover {
@@ -19,12 +22,15 @@
     background-color: transparent;
     align-items: center;
     text-align: center;
+    width: 100%; /* Set table width to fill the container */
+    border-collapse: collapse; /* Collapse table borders to remove spacing */
 }
 
 .table th,
 .table td {
     background-color: transparent;
     border-bottom: 1px solid #dee2e6;
+    padding: 8px; /* Add padding to table cells */
 }
 
 .last-row th,
@@ -32,9 +38,29 @@
     border-bottom: none;
 }
 
-.btn{
+.btn {
     border-radius: 30px;
-
     border: none;
     transition: 0.3s;
+    font-size: 14px; /* Set a base font size for buttons */
+    padding: 8px 16px; /* Add padding to buttons */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .all-students-container {
+        margin: 10px;
+        padding: 2%;
+    }
+
+    .table th,
+    .table td {
+        padding: 5px;
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
 }

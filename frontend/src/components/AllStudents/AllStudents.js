@@ -27,26 +27,28 @@ export default function AllStudents() {
             <table className="table">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Age</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Reg. Number</th>
                     <th>Gender</th>
                     <th>Student Profile</th>
                 </tr>
                 </thead>
                 <tbody>
                 {students.map((student, index) => (
-                    <tr key={student._id}
-                        className={index === students.length - 1 ? "last-row" : ""}> {/* Add the class for the last row */}
-                        <td>{student.name}</td>
-                        <td>{student.age}</td>
+                    <tr key={student._id} className={index === students.length - 1 ? "last-row" : ""}>
+                        <td>{student.firstName}</td>
+                        <td>{student.lastName}</td>
+                        <td>{student.regNumber}</td>
                         <td>{student.gender}</td>
                         <td>
-                            <Link to={`/student-profile`}>
+                            <Link to={`/student-profile/${student._id}`}>
                                 <button className="btn btn-primary">View</button>
                             </Link>
                         </td>
                     </tr>
                 ))}
+
                 </tbody>
             </table>
         </div>
